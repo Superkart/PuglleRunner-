@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4665181676838408}
   m_Layer: 0
   m_Name: Police_station_prefab
-  m_TagString: Untagged
+  m_TagString: Buildings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 4665181676838408}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.79875
       objectReference: {fileID: 0}
@@ -164,6 +168,10 @@ PrefabInstance:
       value: 6.499
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5000023
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.49999928
       objectReference: {fileID: 0}
@@ -174,14 +182,6 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.49999785
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5000023
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdf4cf4603b86654f845326f54a0562a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
