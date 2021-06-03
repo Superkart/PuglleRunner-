@@ -21,7 +21,7 @@ public class RoadSpawn : MonoBehaviour
         GameObject moveRoad = roads[0];
         roads.Remove(moveRoad);
         float newZ = roads[roads.Count - 1].transform.position.z + offset;
-        moveRoad.transform.position = new Vector3(32.3359f, -7.879992f, newZ);
+        moveRoad.transform.position = new Vector3(0f, 0f, newZ);
         roads.Add(moveRoad);
     }
 
