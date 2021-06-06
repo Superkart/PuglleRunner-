@@ -12,12 +12,12 @@ public class Street : MonoBehaviour
 
     public void SpawnBuilding(GameObject tower, bool left = false)
     {
-        var building = Spawner.GetRandomBuilding();
+      /*  var building = Spawner.GetRandomBuilding();
         building.SetActive(true);
         building.transform.SetParent(tower.transform);
         if(left)
            building.transform.Rotate(0f, 180f, 0f);
-        building.transform.localPosition = Vector3.zero;
+        building.transform.localPosition = Vector3.zero;*/
     }
 
     // Update is called once per frame
