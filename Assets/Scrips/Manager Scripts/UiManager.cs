@@ -9,6 +9,7 @@ public class UiManager : MonoBehaviour
     public TextMeshProUGUI CoinsLabel;
     public Text GameDistanceLabel;
     public TextMeshProUGUI FinalScoreLabel;
+    public TextMeshProUGUI HighScoreLabel;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class UiManager : MonoBehaviour
         {
             GameDistanceLabel.text =  GameManager.GetDataManager().GetDistance().ToString();
             FinalScoreLabel.text = "Score" + GameManager.GetDataManager().GetScore().ToString();
+            HighScoreLabel.text = "High Score" + GameManager.GetDataManager().GetHighScore();
         }
             
     }
