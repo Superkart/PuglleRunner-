@@ -101,6 +101,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3887162491855328849}
     m_Modifications:
+    - target: {fileID: 1166370495870333301, guid: 00f6fd7ae2fd78148aaa002320adc854, type: 3}
+      propertyPath: ObstalePrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 5124424611824126050, guid: 7383fa75da3fd9d42acc617ef76df9dc, type: 3}
+    - target: {fileID: 1166370495870333301, guid: 00f6fd7ae2fd78148aaa002320adc854, type: 3}
+      propertyPath: ObstalePrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 97396045475851295, guid: 004e419e5202f1d438524f6f25208ef1, type: 3}
     - target: {fileID: 3799696674995543616, guid: 00f6fd7ae2fd78148aaa002320adc854, type: 3}
       propertyPath: m_RootOrder
       value: 0

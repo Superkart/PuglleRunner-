@@ -5,18 +5,46 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private GameObject player;
-    public Text distanceCount;
+    int playerStartScore;
+    DataManager datmgrRef;
+    //All Managers in Game
+    public static DataManager m_DataManager;
+    [SerializeField]
+    public static AudioManager m_AudioManager;
+    public static DataManager GetDataManager()
+    {
+        if (m_DataManager == null)
+        {
+           m_DataManager =  GameObject.Find("DataManager").GetComponent<DataManager>();
+        }
+        return m_DataManager;
+    }
+    public static AudioManager GetAudioManager()
+    {
+        if (m_AudioManager == null)
+        {
+            m_AudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        }
+
+        return m_AudioManager;
+    }
 
     private void Start()
     {
+        GetAudioManager().PlayBackgroundMusic();
+
+
         player = GameObject.Find("Player");
+        playerStartScore = Mathf.RoundToInt(player.transform.position.z);
+        datmgrRef = GameManager.GetDataManager();
     }
 
     // Update is called once per frame
     void Update()
     {
-        int distance = Mathf.RoundToInt(player.transform.position.z);
-        distanceCount.text = distance.ToString() + "m";
+        int currPlayerDistance = Mathf.RoundToInt(player.transform.position.z);
+        int currDistance = currPlayerDistance - playerStartScore;
+        datmgrRef.SetDistance(currDistance);
     }
 }
 

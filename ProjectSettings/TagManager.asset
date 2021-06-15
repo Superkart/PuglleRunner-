@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Buildings
+  - Obstacle
+  - Coin
+  - SpawnTrigger
   layers:
   - Default
   - TransparentFX

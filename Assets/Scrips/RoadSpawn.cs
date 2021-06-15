@@ -23,6 +23,17 @@ public class RoadSpawn : MonoBehaviour
         float newZ = roads[roads.Count - 1].transform.position.z + offset;
         moveRoad.transform.position = new Vector3(0f, 0f, newZ);
         roads.Add(moveRoad);
+
+       var obsSpawner = moveRoad.GetComponentInChildren<ObstacleSpawner>();
+
+        if (obsSpawner != null)
+        {
+            obsSpawner.ResetAllObstacles();
+        }
+        else {
+            Debug.LogError("Obstacle Spawner is missing");
+        }
+
     }
 
     
