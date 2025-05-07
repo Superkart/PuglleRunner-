@@ -22,12 +22,12 @@ public class GameOver : MonoBehaviour
     {
         if (gameOver)
         {
-            Time.timeScale = 0;
             gameOverPanel.SetActive(true);
             GameManager.GetDataManager().SaveData();
             GameManager.GetAudioManager().StopBackgroundMusic();
+            Time.timeScale = 0;
         }
-        
+
     }
 
     public void Replay()

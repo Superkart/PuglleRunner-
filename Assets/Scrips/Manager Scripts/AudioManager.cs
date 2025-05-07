@@ -30,6 +30,21 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PauseBackgroundMusic()
+    {
+        if (BackgroundMusicSource != null)
+        {
+            BackgroundMusicSource.Pause();
+        }
+    }
+
+    public void ResumeBackgroundMusic()
+    {
+        if (BackgroundMusicSource != null)
+        {
+            BackgroundMusicSource.UnPause();
+        }
+    }
     public void PlaySoundEffect(string audioName)
     {
        var audioClip = Resources.Load<AudioClip>("AudioFiles/"+audioName);
@@ -40,6 +55,8 @@ public class AudioManager : MonoBehaviour
             AudioSources[0].Play();
         }
     }
+
+    
 
     public void PlaySfx()
     {

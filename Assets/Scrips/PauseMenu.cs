@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        GameManager.GetAudioManager().PauseBackgroundMusic();
         GameManager.GetAudioManager().PlaySfx();
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -41,6 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        GameManager.GetAudioManager().ResumeBackgroundMusic();
         GameManager.GetAudioManager().PlaySfx();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
@@ -49,6 +51,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        GameManager.GetAudioManager().StopBackgroundMusic();
         GameManager.GetAudioManager().PlaySfx();
         Application.Quit();
     }
